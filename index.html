@@ -1,126 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Crown of Ash – Supports</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crown of Ash Supports</title>
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
+      font-family: Segoe UI, sans-serif;
       background: #fdfdfd;
       color: #222;
       margin: 0;
       display: flex;
       height: 100vh;
     }
-    #char-list {
-      width: 220px;
-      background: #2d2d2d;
-      color: #eee;
-      padding: 1rem;
+    .sidebar {
+      width: 250px;
+      background: #111;
+      color: #ffffff;
+      padding: 20px;
+      overflow-y: auto;
+      border-right: 2px solid #333;
     }
-    #char-list h3 {
-      margin-top: 0;
-      font-size: 1.2rem;
-      border-bottom: 1px solid #555;
-      padding-bottom: 0.5rem;
+    .sidebar h1 {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 15px;
     }
-    #char-list ul {
+    .character-list {
       list-style: none;
       padding: 0;
-      margin: 0;
     }
-    #char-list li {
+    .character-list li {
+      margin: 10px 0;
       padding: 8px;
+      border-radius: 4px;
       cursor: pointer;
-      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #2b2b2b;
     }
-    #char-list li:hover {
-      background: #444;
+    .character-list li:hover {
+      background: #3a3a3a;
     }
-    #detail {
-      flex: 1;
-      padding: 1.5rem;
+    .affinity-icon {
+      width: 18px;
+      height: 18px;
+      margin-left: 8px;
     }
-    #char-name {
-      margin-top: 0;
-      font-size: 1.6rem;
-      color: #333;
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+      overflow-y: auto;
     }
-    .section-title {
-      margin-top: 1.5rem;
-      font-size: 1.2rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.3rem;
-    }
-    .support-entry {
-      margin-top: 0.6rem;
-      padding: 0.5rem;
-      background: #f4f4f4;
-      border-radius: 4px;
-    }
-    .support-entry span {
-      font-weight: bold;
+    .details {
+      display: none;
     }
   </style>
-</head>
-<body>
-  <div id="char-list">
-    <h3>Characters</h3>
-    <ul id="list"></ul>
-  </div>
-
-  <div id="detail">
-    <h2 id="char-name">Select a character</h2>
-    <div id="info"></div>
-    <div id="supports">
-      <h3 class="section-title">Supports</h3>
-      <div id="support-list"></div>
-    </div>
-  </div>
-
   <script>
-    // Only Finn is available for now
-    const characters = [
-      {
-        id: "finn",
-        name: "Finn Corris",
-        affinity: "Anima",
-        archetype: "Renegade",
-        supports: [
-          { partner: "Dalton Chandler", affinity: "Fire" },
-          { partner: "Father Loomis", affinity: "Light" }
-        ]
-      }
-    ];
-
-    const listEl = document.getElementById("list");
-    const nameEl = document.getElementById("char-name");
-    const infoEl = document.getElementById("info");
-    const supportListEl = document.getElementById("support-list");
-
-    // Populate the character list
-    characters.forEach(char => {
-      const li = document.createElement("li");
-      li.textContent = char.name;
-      li.onclick = () => showDetails(char.id);
-      listEl.appendChild(li);
-    });
-
-    function showDetails(charId) {
-      const char = characters.find(c => c.id === charId);
-      nameEl.textContent = char.name;
-      infoEl.innerHTML = `
-        <p><strong>Affinity:</strong> ${char.affinity}</p>
-        <p><strong>Archetype:</strong> ${char.archetype}</p>
-      `;
-      supportListEl.innerHTML = "";
-      char.supports.forEach(s => {
-        const div = document.createElement("div");
-        div.className = "support-entry";
-        div.innerHTML = `<span>${s.partner}</span> — ${s.affinity} Affinity`;
-        supportListEl.appendChild(div);
-      });
+    function showDetails(id) {
+      document.querySelectorAll('.details').forEach(el => el.style.display = "none");
+      document.getElementById(id).style.display = "block";
     }
   </script>
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Characters</h1>
+    <ul class="character-list">
+      <li onclick="showDetails('finn')">Finn Corris <img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('dalton')">Dalton Chandler <img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('cleg')">Cleg <img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('jennifer')">Jennifer <img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('gaius')">Gaius <img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('farah')">Farah <img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('rinea')">Rinea <img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('loomis')">Father Loomis <img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon"></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div id="finn" class="details">
+      <h2>Finn Corris</h2>
+      <h3>Cyclops</h3>
+      <p><b>Description:</b> ????</p>
+      <b>Supports:</b>
+      <ul>
+        <li>Gaius (<img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon">)</li>
+        <li>Father Loomis (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+      </ul>
+    </div>
+
+    <div id="dalton" class="details">
+      <h2>Dalton Chandler</h2>
+      <h3>Madman</h3>
+      <p><b>Description:</b> ????</p>
+      <b>Supports:</b>
+      <ul>
+        <li>Cleg (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+        <li>Gaius (<img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon">)</li>
+      </ul>
+    </div>
+
+    <div id="cleg" class="details">
+      <h2>Cleg</h2>
+      <h3>Handsome</h3>
+      <p><b>Description:</b> ????</p>
+      <b>Supports:</b>
+      <ul>
+        <li>Dalton Chandler (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+      </ul>
+    </div>
+
+    <div id="jennifer" class="details">
+      <h2>Jennifer</h2>
+      <h3>Flake</h3>
+      <p><b>Description:</b> ????</p>
+      <b>Supports:</b>
+      <ul>
+        <li>Father Loomis (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+      </ul>
+    </div>
+
+    <div id="gaius" class="details">
+      <h2>Gaius</h2>
+      <h3>Glib</h3>
+      <p><b>Description:</b> ????</p>
+      <b>Supports:</b>
+      <ul>
+        <li>Finn Corris (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+        <li>Dalton Chandler (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+      </ul>
+    </div>
+
+    <div id="farah" class="details">
+      <h2>Farah</h2>
+      <h3>Monster</h3>
+      <p><b>Description:</b> ????</p>
+      <b>Supports:</b>
+      <ul>
+        <li>Rinea (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+      </ul>
+    </div>
+
+    <div id="rinea" class="details">
+      <h2>Rinea</h2>
+      <h3>Witch</h3>
+      <p><b>Description:</b> ????</p>
+      <b>Supports:</b>
+      <ul>
+        <li>Farah (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+      </ul>
+    </div>
+
+    <div id="loomis" class="details">
+      <h2>Father Loomis</h2>
+      <h3>Fatso</h3>
+      <p><b>Description:</b> ????</p>
+      <b>Supports:</b>
+      <ul>
+        <li>Finn Corris (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+        <li>Jennifer (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
