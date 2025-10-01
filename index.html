@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Segoe UI, sans-serif;
-      background: #fdfdfd;
+      background: #A9A9A9A9;
       color: #222;
       margin: 0;
       display: flex;
@@ -56,6 +56,9 @@
     .details {
       display: none;
     }
+    .default {
+      display: block;
+    }
   </style>
   <script>
     function showDetails(id) {
@@ -76,10 +79,48 @@
       <li onclick="showDetails('farah')">Farah <img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon"></li>
       <li onclick="showDetails('rinea')">Rinea <img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon"></li>
       <li onclick="showDetails('loomis')">Father Loomis <img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('leah')">Leah Chandler <img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('velnara')">Velnara <img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('garrick')">Garrick <img src="https://cdn.fireemblemwiki.org/f/f8/Is_gba_thunderaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('rowan')">Rowan <img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('largo')">Largo <img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('karl')">Karl <img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('cairn')">Cairn <img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('mina')">Mina <img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('morgan')">Morgan <img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('aoife')">Aoife <img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('armin')">Armin <img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('wren')">Wren <img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('yuki')">Yuki <img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('deidre')">Deidre <img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('riku')">Riku <img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('juniper')">Juniper <img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('narcissus')">Narcissus <img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('irmina')">Irmina <img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('hugo')">Hugo <img src="https://cdn.fireemblemwiki.org/f/f8/Is_gba_thunderaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('quinn')">Quinn <img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('engel')">Engel <img src="https://cdn.fireemblemwiki.org/f/f8/Is_gba_thunderaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('paige')">Paige <img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('tsubaki')">Tsubaki <img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('leo')">Leo <img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('lapis')">Lapis <img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('henri')">Henri <img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('zelda')">Zelda <img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('fern')">Fern <img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('cole')">Cole <img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('robin')">Robin <img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('alois')">Alois <img src="https://cdn.fireemblemwiki.org/f/f8/Is_gba_thunderaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('nalani')">Nalani <img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon"></li>
+      <li onclick="showDetails('seth')">Seth <img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon"></li>
     </ul>
   </div>
 
   <div class="content">
+    <div id="default" class="details default">
+      <h2>Welcome</h2>
+      <p>Select a character from the left to view their details and supports.</p>
+    </div>
+
     <div id="finn" class="details">
       <h2>Finn Corris</h2>
       <h3>Cyclops</h3>
@@ -88,6 +129,9 @@
       <ul>
         <li>Gaius (<img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon">)</li>
         <li>Father Loomis (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+        <li>Velnara (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+        <li>Quinn (<img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon">)</li>
+        <li>Paige (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
       </ul>
     </div>
 
@@ -99,6 +143,8 @@
       <ul>
         <li>Cleg (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
         <li>Gaius (<img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon">)</li>
+        <li>Leah Chandler (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+        <li>Tsubaki (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
       </ul>
     </div>
 
@@ -109,6 +155,10 @@
       <b>Supports:</b>
       <ul>
         <li>Dalton Chandler (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+        <li>Mina (<img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon">)</li>
+        <li>Aoife (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+        <li>Hugo (<img src="https://cdn.fireemblemwiki.org/f/f8/Is_gba_thunderaffin.png" class="affinity-icon">)</li>
+        <li>Engel (<img src="https://cdn.fireemblemwiki.org/f/f8/Is_gba_thunderaffin.png" class="affinity-icon">)</li>
       </ul>
     </div>
 
@@ -119,6 +169,10 @@
       <b>Supports:</b>
       <ul>
         <li>Father Loomis (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+        <li>Karl (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+        <li>Armin (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+        <li>Deidre (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+        <li>Narcissus (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
       </ul>
     </div>
 
@@ -130,6 +184,9 @@
       <ul>
         <li>Finn Corris (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
         <li>Dalton Chandler (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+        <li>Hugo (<img src="https://cdn.fireemblemwiki.org/f/f8/Is_gba_thunderaffin.png" class="affinity-icon">)</li>
+        <li>Tsubaki (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+        <li>Alois (<img src="https://cdn.fireemblemwiki.org/f/f8/Is_gba_thunderaffin.png" class="affinity-icon">)</li>
       </ul>
     </div>
 
@@ -140,16 +197,23 @@
       <b>Supports:</b>
       <ul>
         <li>Rinea (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+        <li>Yuki (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+        <li>Narcissus (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
       </ul>
     </div>
 
     <div id="rinea" class="details">
       <h2>Rinea</h2>
       <h3>Witch</h3>
-      <p><b>Description:</b> ????</p>
+      <p><b>Description:</b> A curious young woman who cavorted with demons; not to be trusted.</p>
       <b>Supports:</b>
       <ul>
         <li>Farah (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+        <li>Cairn (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+        <li>Morgan (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+        <li>Paige (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+        <li>Robin (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+        <li>Narcissus (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
       </ul>
     </div>
 
@@ -161,8 +225,357 @@
       <ul>
         <li>Finn Corris (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
         <li>Jennifer (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+        <li>Largo (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+        <li>Juniper (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
       </ul>
     </div>
+
+    <div id="leah" class="details">
+      <h2>Leah Chandler</h2>
+      <h3>Spinster</h3>
+      <p><b>Description:</b> Dalton's wife, a woman with a bright smile and a dark heart.</p>
+      <b>Supports:</b>
+      <ul>
+        <li>Dalton Chandler (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+      </ul>
+    </div>
+
+<div id="velnara" class="details">
+  <h2>Velnara</h2>
+  <h3>Gargantua</h3>
+  <p><b>Description:</b> A commander in the penal legion, known for her strength in arms and sound strategies.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Finn Corris (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+    <li>Rowan (<img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon">)</li>
+    <li>Aoife (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+    <li>Quinn (<img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon">)</li>
+    <li>Seth (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="garrick" class="details">
+  <h2>Garrick</h2>
+  <h3>Lucky</h3>
+  <p><b>Description:</b> A pirate with a long-lasting lucky streak who got cursed by a witch.</p>
+  <b>Supports:</b>
+  <ul></ul>
+</div>
+
+<div id="rowan" class="details">
+  <h2>Rowan</h2>
+  <h3>Redshirt</h3>
+  <p><b>Description:</b> A villager that took up arms, and is fully expected to fall before winter's end.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Velnara (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="largo" class="details">
+  <h2>Largo</h2>
+  <h3>Wheels</h3>
+  <p><b>Description:</b> A transporter hired on long-term by the legion, always willing to trade.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Father Loomis (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="karl" class="details">
+  <h2>Karl</h2>
+  <h3>Herald</h3>
+  <p><b>Description:</b> An outspoken priest with a hot streak.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Jennifer (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="cairn" class="details">
+  <h2>Cairn</h2>
+  <h3>Gloomy</h3>
+  <p><b>Description:</b> The lone surviving soldier of his platoon, wiped out by... something.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Rinea (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+    <li>Robin (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="mina" class="details">
+  <h2>Mina</h2>
+  <h3>Merc</h3>
+  <p><b>Description:</b> A mercenary, sticking to a strict code only she knows.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Cleg (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="morgan" class="details">
+  <h2>Morgan</h2>
+  <h3>Apostate</h3>
+  <p><b>Description:</b> A known cavorter with demons.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Rinea (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="aoife" class="details">
+  <h2>Aoife</h2>
+  <h3>Wings</h3>
+  <p><b>Description:</b> A member of the pegasus legion, has a fondness for all animals.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Cleg (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+    <li>Velnara (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+    <li>Irmina (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+    <li>Quinn (<img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon">)</li>
+    <li>Paige (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+    <li>Lapis (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+    <li>Zelda (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+    <li>Nalani (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="armin" class="details">
+  <h2>Armin</h2>
+  <h3>Stump</h3>
+  <p><b>Description:</b> An archer that's been strongly considering deserting.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Jennifer (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="wren" class="details">
+  <h2>Wren</h2>
+  <h3>Sticky Fingers</h3>
+  <p><b>Description:</b> A young thief that stole to feed their family.</p>
+  <b>Supports:</b>
+  <ul></ul>
+</div>
+
+<div id="yuki" class="details">
+  <h2>Yuki</h2>
+  <h3>Kitten</h3>
+  <p><b>Description:</b> A young beastkin cleric, judged for her ears and tail more than her good deeds.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Farah (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="deidre" class="details">
+  <h2>Deidre</h2>
+  <h3>Goldilocks</h3>
+  <p><b>Description:</b> A nobleman's daughter serving after murdering her betrothed.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Jennifer (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="riku" class="details">
+  <h2>Riku</h2>
+  <h3>Edgelord</h3>
+  <p><b>Description:</b> A young swordsman that practices an odd style of fighting.</p>
+  <b>Supports:</b>
+  <ul></ul>
+</div>
+
+<div id="juniper" class="details">
+  <h2>Juniper</h2>
+  <h3>Ribbons</h3>
+  <p><b>Description:</b> A mage that gets picked on incessantly by her peers. May have snuck magical explosive runes into her teacher's desk.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Father Loomis (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+<div id="narcissus" class="details">
+  <h2>Narcissus</h2>
+  <h3>Nympho</h3>
+  <p><b>Description:</b> A dancer that can't help but hit on the ladies. Most people ignore the dragon horns.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Jennifer (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+    <li>Rinea (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+    <li>Farah (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+    <li>Lapis (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+    <li>Yuki (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="irmina" class="details">
+  <h2>Irmina</h2>
+  <h3>Savior</h3>
+  <p><b>Description:</b> A no-nonsense valkyrie that will happily blast you off the face of the earth for looking at her wrong.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Seth (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+    <li>Aoife (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="hugo" class="details">
+  <h2>Hugo</h2>
+  <h3>Turncoat</h3>
+  <p><b>Description:</b> A cavalier from the kingdom that really didn't want to die. Now he gets put on the front lines repeatedly, go figure.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Cleg (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+    <li>Gaius (<img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="quinn" class="details">
+  <h2>Quinn</h2>
+  <h3>Scales</h3>
+  <p><b>Description:</b> A wyvern knight that, despite her looks, will happily rush a line of archers so long as she trusts her commander.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Finn Corris (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+    <li>Velnara (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+    <li>Aoife (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="engel" class="details">
+  <h2>Engel</h2>
+  <h3>Idiot</h3>
+  <p><b>Description:</b> A brigand that, for some reason, got recruited.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Cleg (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="paige" class="details">
+  <h2>Paige</h2>
+  <h3>Prodigy</h3>
+  <p><b>Description:</b> A mage knight that truly lives up to the name.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Finn Corris (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+    <li>Rinea (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+    <li>Aoife (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="tsubaki" class="details">
+  <h2>Tsubaki</h2>
+  <h3>Psycho</h3>
+  <p><b>Description:</b> A peerless swordmaster that thirsts for more and more difficult battles.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Dalton Chandler (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+    <li>Gaius (<img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="leo" class="details">
+  <h2>Leo</h2>
+  <h3>Brick</h3>
+  <p><b>Description:</b> A wall of meat in human form, Leo may as well be invincible.</p>
+  <b>Supports:</b>
+  <ul></ul>
+</div>
+
+<div id="lapis" class="details">
+  <h2>Lapis</h2>
+  <h3>Dreamer</h3>
+  <p><b>Description:</b> A talented young woman who volunteered for the legion.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Henri (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+    <li>Aoife (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="henri" class="details">
+  <h2>Henri</h2>
+  <h3>Hero</h3>
+  <p><b>Description:</b> A talented young man who volunteered for the legion.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Lapis (<img src="https://cdn.fireemblemwiki.org/3/35/Is_gba_lightaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="zelda" class="details">
+  <h2>Zelda</h2>
+  <h3>Crow</h3>
+  <p><b>Description:</b> A true opportunist on horseback, Zelda doesn't take any prisoners.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Aoife (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="fern" class="details">
+  <h2>Fern</h2>
+  <h3>Star-Gazer</h3>
+  <p><b>Description:</b> A powerful sage with a tendency to go wandering in the woods at the worst time.</p>
+  <b>Supports:</b>
+  <ul></ul>
+</div>
+
+<div id="cole" class="details">
+  <h2>Cole</h2>
+  <h3>Killer</h3>
+  <p><b>Description:</b> A cynical assassin that only listens to the highest bidder.</p>
+  <b>Supports:</b>
+  <ul></ul>
+</div>
+
+<div id="robin" class="details">
+  <h2>Robin</h2>
+  <h3>Recreant</h3>
+  <p><b>Description:</b> A powerful dark knight that's willing to do what it takes to win.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Rinea (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+    <li>Cairn (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+    <li>Morgan (<img src="https://cdn.fireemblemwiki.org/4/42/Is_gba_darkaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="alois" class="details">
+  <h2>Alois</h2>
+  <h3>Master of Arms</h3>
+  <p><b>Description:</b> The Legion's master of arms, and a powerful man.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Gaius (<img src="https://cdn.fireemblemwiki.org/f/f3/Is_gba_iceaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="nalani" class="details">
+  <h2>Nalani</h2>
+  <h3>Cyclone</h3>
+  <p><b>Description:</b> The legion's foremost falcoknight, and a one-woman-army.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Seth (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+    <li>Aoife (<img src="https://cdn.fireemblemwiki.org/b/b1/Is_gba_windaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
+<div id="seth" class="details">
+  <h2>Seth</h2>
+  <h3>Boss</h3>
+  <p><b>Description:</b> The legion's commander, willing to do what it takes to survive and win, both.</p>
+  <b>Supports:</b>
+  <ul>
+    <li>Velnara (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+    <li>Irmina (<img src="https://cdn.fireemblemwiki.org/0/00/Is_gba_animaaffin.png" class="affinity-icon">)</li>
+    <li>Nalani (<img src="https://cdn.fireemblemwiki.org/a/af/Is_gba_fireaffin.png" class="affinity-icon">)</li>
+  </ul>
+</div>
+
   </div>
 </body>
 </html>
